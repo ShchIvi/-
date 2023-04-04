@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Продажа билетов в кинотеатре</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:image" content="https://static.tildacdn.info/tild3065-6661-4632-b336-333463616230/-/resize/504x/CwS4PKCKFUk.jpg" />
+        <link rel="stylesheet" href="style_vfadt.css">
+    </head>
+    <body background="333.jpg">
+        <h1>Продажа билетов в кинотеатре</h1>
+        <form action="buy_ticket.php" method="post">
+            <label for="movie">Выберите фильм:</label><br>
+            <select id="movie" name="movie">
+                <option value="Avengers: Endgame">Avengers: Endgame</option>
+                <option value="Joker">Joker</option>
+                <option value="The Lion King">The Lion King</option>
+                <option value="Toy Story 4">Toy Story 4</option>
+            </select><br>
+            <label for="date">Выберите дату:</label><br>
+            <input type="date" id="date" name="date"><br>
+            <label for="time">Выберите время:</label><br>
+            <select id="time" name="time">
+                <option value="10:00">10:00</option>
+                <option value="14:00">14:00</option>
+                <option value="18:00">18:00</option>
+                <option value="22:00">22:00</option>
+            </select><br>
+            <label for="quantity">Количество билетов:</label><br>
+            <input type="number" id="quantity" name="quantity" min="1" max="10"><br>
+            <button class="ticket-button" type="submit" ><a type="submit" href = "mesta.html">Купить билеты</a></button>
+        </form>
+    </body>
+</html>
+
